@@ -20,6 +20,10 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<!-- add bootstrap and jquerry -->
+<script type="text/javascript" src="http://www.genetic.ro/pttdev/wp-content/themes/ppt-slug/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.genetic.ro/pttdev/wp-content/themes/ppt-slug/js/jquery.min.js"></script>
+
 <?php wp_footer(); ?>
 
 </body>
