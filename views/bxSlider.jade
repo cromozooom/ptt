@@ -1,0 +1,48 @@
+.container
+	.row
+		.col-xs-12.sPxSlider
+			ul.bxslider
+				li
+					a(href="#")
+						picture
+							//[if IE 9]><video style="display: none;"><![endif]
+							source(srcset="assets/images/slider/02/1600_02.jpg 1x" media="(min-width:1200px)")
+							source(srcset="assets/images/slider/02/1200_02.jpg 1x" media="(min-width: 900px)")
+							source(srcset="assets/images/slider/02/800_02.jpg 1x" media="(min-width: 600px)")
+							source(srcset="assets/images/slider/02/600_02.jpg 1x" media="(min-width: 400px)")
+							source(srcset="assets/images/slider/02/600_02.jpg 1x"
+							//[if IE 9]></video><![endif]
+							img.polyfill(srcset="assets/images/slider/02/1200_02.jpg" alt="saldi")
+				li
+					a(href="#")
+						picture
+							//[if IE 9]><video style="display: none;"><![endif]
+							source(srcset="assets/images/slider/01/1600_01.jpg 1x" media="(min-width:1200px)")
+							source(srcset="assets/images/slider/01/1200_01.jpg 1x" media="(min-width: 900px)")
+							source(srcset="assets/images/slider/01/800_01.jpg 1x" media="(min-width: 600px)")
+							source(srcset="assets/images/slider/01/600_01.jpg 1x" media="(min-width: 400px)")
+							source(srcset="assets/images/slider/01/600_01.jpg 1x")
+							//[if IE 9]></video><![endif]
+							img.polyfill(srcset="assets/images/slider/01/1200_01.jpg" alt="saldi")
+				li
+					a(href="#")
+						picture
+							//[if IE 9]><video style="display: none;"><![endif]
+							source(srcset="assets/images/slider/02/1600_02.jpg 1x" media="(min-width:1200px)")
+							source(srcset="assets/images/slider/02/1200_02.jpg 1x" media="(min-width: 900px)")
+							source(srcset="assets/images/slider/02/800_02.jpg 1x" media="(min-width: 600px)")
+							source(srcset="assets/images/slider/02/600_02.jpg 1x" media="(min-width:400px)")
+							source(srcset="assets/images/slider/02/600_02.jpg 1x")
+							//[if IE 9]></video><![endif]
+							img.polyfill(srcset="assets/images/slider/02/1200_02.jpg" alt="saldi")
+			.container
+				.row#bx-pager
+					a.col-xs-12.col-sm-4.col-md-4.col-lg-4.text-center.slide01(data-slide-index="0" href="")
+						h5 Sale until 50%
+						p approfita
+					a.col-xs-12.col-sm-4.col-md-4.col-lg-4.text-center.slide02(data-slide-index="1" href="")
+						h5 Piu prendi piu risparmi
+						p 10%, 15%, 20% codice sconto
+					a.col-xs-12.col-sm-4.col-md-4.col-lg-4.text-center.slide03(data-slide-index="2" href="")
+						h5 Maglie gara
+						p 2015/14

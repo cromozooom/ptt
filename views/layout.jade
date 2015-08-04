@@ -38,7 +38,11 @@ html(lang='en')
 
 	body(class="#{namepage}")
 		block header
-			//.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+			if yamm = true
+				include yamm/navbar-fixed.jade
+				// include ../views/navbar-more.jade
+			else
+			.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
 				.container-fluid
 					.navbar-header
 						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
@@ -51,15 +55,54 @@ html(lang='en')
 					.collapse.navbar-collapse
 						ul.nav.navbar-nav
 							li.active
-								a(href='#') Home
+								a(href='#') home
+
+							li.dropdown
+								a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+									| Solutions 
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Network Equipment Manufacturers
+									li
+										a(href="#") Operators & Service Providers
+									li
+										a(href="#") Vertical Solutions
+									//
+										li.divider(role="separator")
+										li
+											a(href="#") Separated link
+										li.divider(role="separator")
+										li
+											a(href="#") One more separated link
+
+							li.dropdown
+								a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+									| Products 
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Network Equipment Manufacturers
+									li
+										a(href="#") Operators & Service Providers
+									li
+										a(href="#") Vertical Solutions
+
+							li.dropdown
+								a.dropdown-toggle(href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false")
+									| About US 
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#") Careers
+									li
+										a(href="#") Contact
+									li
+										a(href="#") Company profyle
+
 							li
-								a(href='#about') About
-							li
-								a(href='#contact') Contact
+								a(href='#contact') News
 					// /.nav-collapse
-			if yamm = true
-				include ../views/yamm/navbar-fixed.jade
-				// include ../views/navbar-more.jade
 
 		block content
 
